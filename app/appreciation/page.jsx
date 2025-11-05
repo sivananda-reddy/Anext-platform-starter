@@ -5,13 +5,13 @@ import { Card } from 'components/card';
 import { useState, useEffect } from 'react';
 
 const navItems = [
-    { id: 'overview', label: 'Proposal Overview', icon: '' },
-    { id: 'background', label: 'Background & Problem', icon: '' },
-    { id: 'solution', label: 'Proposed Solution', icon: '' },
-    { id: 'implementation', label: 'Implementation Plan', icon: '' },
-    { id: 'benefits', label: 'Expected Benefits', icon: '' },
-    { id: 'management', label: 'Proposal', icon: '' },
-    { id: 'conclusion', label: 'Conclusion', icon: '' }
+    { id: 'overview', label: 'Proposal Overview', icon: '📋' },
+    { id: 'background', label: 'Background & Problem', icon: '🔍' },
+    { id: 'solution', label: 'Proposed Solution', icon: '💡' },
+    { id: 'implementation', label: 'Implementation Plan', icon: '🚀' },
+    { id: 'benefits', label: 'Expected Benefits', icon: '✨' },
+    { id: 'management', label: 'Proposal', icon: '📋' },
+    { id: 'conclusion', label: 'Conclusion', icon: '🎯' }
 ];
 
 export default function AppreciationPage() {
@@ -74,6 +74,7 @@ export default function AppreciationPage() {
                                         : 'hover:bg-neutral-100 text-neutral-700'
                                 }`}
                             >
+                                <span className="text-lg">{item.icon}</span>
                                 <span className="text-sm">{item.label}</span>
                             </button>
                         ))}
@@ -92,8 +93,9 @@ export default function AppreciationPage() {
                     {/* Header Section */}
                     <section className="mb-8">
                         <div className="bg-white rounded-lg p-6 mb-6 border-2 border-primary shadow-lg">
-                            <h1 className="mb-4 text-neutral-900">
-                                Appreciation Card Program Proposal
+                            <h1 className="mb-4 flex items-center gap-3 text-neutral-900">
+                                <span className="text-4xl">🏆</span>
+                                <span>Appreciation Card Program Proposal</span>
                             </h1>
                             <p className="text-lg text-neutral-700 mb-4">
                                 I would like to propose the Appreciation Card Program initiative to help build a stronger culture of 
@@ -111,38 +113,43 @@ export default function AppreciationPage() {
 
                     {/* 1. Proposal Overview */}
                     <section id="overview" className="scroll-mt-24">
-                        <h2 className="mb-6">
-                            1. Proposal Overview
+                        <h2 className="mb-6 flex items-center gap-2">
+                            <span className="text-3xl">📋</span>
+                            <span>1. Proposal Overview</span>
                         </h2>
                         <Card>
                             <div className="grid gap-6 sm:grid-cols-2">
                                 <div>
-                                    <h3 className="mb-2 text-neutral-900">
-                                        Objective
+                                    <h3 className="mb-2 text-neutral-900 flex items-center gap-2">
+                                        <span>🎯</span>
+                                        <span>Objective</span>
                                     </h3>
                                     <p className="text-neutral-600">
                                         Introduce a formal appreciation card system within the Software Development Team.
                                     </p>
                                 </div>
                                 <div>
-                                    <h3 className="mb-2 text-neutral-900">
-                                        Purpose
+                                    <h3 className="mb-2 text-neutral-900 flex items-center gap-2">
+                                        <span>💪</span>
+                                        <span>Purpose</span>
                                     </h3>
                                     <p className="text-neutral-600">
                                         Encourage gratitude, boost morale, and enhance collaboration among team members.
                                     </p>
                                 </div>
                                 <div>
-                                    <h3 className="mb-2 text-neutral-900">
-                                        Approach
+                                    <h3 className="mb-2 text-neutral-900 flex items-center gap-2">
+                                        <span>🔧</span>
+                                        <span>Approach</span>
                                     </h3>
                                     <p className="text-neutral-600">
                                         Implement a friendly, structured method for non-verbal appreciation using printed or digital cards.
                                     </p>
                                 </div>
                                 <div>
-                                    <h3 className="mb-2 text-neutral-900">
-                                        Outcome
+                                    <h3 className="mb-2 text-neutral-900 flex items-center gap-2">
+                                        <span>✨</span>
+                                        <span>Outcome</span>
                                     </h3>
                                     <p className="text-neutral-600">
                                         Strengthened team relationships, improved confidence, and a positive work culture.
@@ -154,8 +161,9 @@ export default function AppreciationPage() {
 
                     {/* 2. Background and Problem Statement */}
                     <section id="background" className="scroll-mt-24">
-                        <h2 className="mb-6">
-                            2. Background and Problem Statement
+                        <h2 className="mb-6 flex items-center gap-2">
+                            <span className="text-3xl">🔍</span>
+                            <span>2. Background and Problem Statement</span>
                         </h2>
                         <Card>
                             <ul className="flex flex-col gap-4 text-neutral-600">
@@ -183,8 +191,9 @@ export default function AppreciationPage() {
 
                     {/* 3. Proposed Solution */}
                     <section id="solution" className="scroll-mt-24">
-                        <h2 className="mb-6">
-                            3. Proposed Solution – Appreciation Card System
+                        <h2 className="mb-6 flex items-center gap-2">
+                            <span className="text-3xl">💡</span>
+                            <span>3. Proposed Solution – Appreciation Card System</span>
                         </h2>
                         <Card>
                             <div className="flex flex-col gap-4">
@@ -232,7 +241,9 @@ export default function AppreciationPage() {
                                             rel="noopener noreferrer"
                                             className="flex items-center gap-2 p-3 rounded-lg bg-neutral-50 hover:bg-neutral-100 border border-neutral-200 transition-colors text-neutral-700"
                                         >
+                                            <span className="text-lg">🛒</span>
                                             <span className="flex-1 text-sm">Amazon.com - 24 Appreciation Thank-you Cards</span>
+                                            <span className="text-xs text-neutral-500">→</span>
                                         </a>
                                         <a
                                             href="https://www.amazon.sg/dp/B0CX594VRL?ref_=mr_referred_us_sg_sg&th=1"
@@ -240,7 +251,9 @@ export default function AppreciationPage() {
                                             rel="noopener noreferrer"
                                             className="flex items-center gap-2 p-3 rounded-lg bg-neutral-50 hover:bg-neutral-100 border border-neutral-200 transition-colors text-neutral-700"
                                         >
+                                            <span className="text-lg">🛒</span>
                                             <span className="flex-1 text-sm">Amazon.sg - Appreciation Cards</span>
+                                            <span className="text-xs text-neutral-500">→</span>
                                         </a>
                                         <a
                                             href="https://www.amazon.sg/dp/B0C5LMP5P8?ref_=mr_referred_us_sg_sg&th=1"
@@ -248,7 +261,9 @@ export default function AppreciationPage() {
                                             rel="noopener noreferrer"
                                             className="flex items-center gap-2 p-3 rounded-lg bg-neutral-50 hover:bg-neutral-100 border border-neutral-200 transition-colors text-neutral-700"
                                         >
+                                            <span className="text-lg">🛒</span>
                                             <span className="flex-1 text-sm">Amazon.sg - Thank You Cards</span>
+                                            <span className="text-xs text-neutral-500">→</span>
                                         </a>
                                         <a
                                             href="https://www.amazon.ca/Yeaqee-Appreciation-Motivational-Encouragement-Recognition/dp/B0CY2R3J76?th=1"
@@ -256,7 +271,9 @@ export default function AppreciationPage() {
                                             rel="noopener noreferrer"
                                             className="flex items-center gap-2 p-3 rounded-lg bg-neutral-50 hover:bg-neutral-100 border border-neutral-200 transition-colors text-neutral-700"
                                         >
+                                            <span className="text-lg">🛒</span>
                                             <span className="flex-1 text-sm">Amazon.ca - Yeaqee Appreciation Cards</span>
+                                            <span className="text-xs text-neutral-500">→</span>
                                         </a>
                                     </div>
                                 </div>
@@ -266,24 +283,28 @@ export default function AppreciationPage() {
 
                     {/* 4. Implementation Plan */}
                     <section id="implementation" className="scroll-mt-24">
-                        <h2 className="mb-6">
-                            4. Implementation Plan
+                        <h2 className="mb-6 flex items-center gap-2">
+                            <span className="text-3xl">🚀</span>
+                            <span>4. Implementation Plan</span>
                         </h2>
                         <Card>
                             <div className="flex flex-col gap-6">
                                 {[
-                                    { step: 1, title: 'Purchase appreciation cards from sample product links', time: 'Week 1', icon: '' },
-                                    { step: 2, title: 'Distribute cards to team members', time: 'Week 2', icon: '' },
-                                    { step: 3, title: 'Launch 1-month pilot within the Software Development Team', time: 'Weeks 3–6', icon: '' },
-                                    { step: 4, title: 'Collect team feedback and measure participation', time: 'Week 7', icon: '' },
-                                    { step: 5, title: 'Expand to other teams if successful', time: 'After pilot evaluation', icon: '' }
+                                    { step: 1, title: 'Purchase appreciation cards from sample product links', time: 'Week 1', icon: '🛒' },
+                                    { step: 2, title: 'Distribute cards to team members', time: 'Week 2', icon: '📦' },
+                                    { step: 3, title: 'Launch 1-month pilot within the Software Development Team', time: 'Weeks 3–6', icon: '📅' },
+                                    { step: 4, title: 'Collect team feedback and measure participation', time: 'Week 7', icon: '📊' },
+                                    { step: 5, title: 'Expand to other teams if successful', time: 'After pilot evaluation', icon: '🌐' }
                                 ].map((item) => (
                                     <div key={item.step} className="flex items-start gap-4 p-4 rounded-lg bg-neutral-50">
                                         <div className="flex items-center justify-center w-10 h-10 font-bold text-white rounded-full bg-primary text-primary-content shrink-0 text-lg">
                                             {item.step}
                                         </div>
                                         <div className="flex-1">
-                                            <h3 className="font-bold text-neutral-900 mb-1">{item.title}</h3>
+                                            <div className="flex items-center gap-2 mb-1">
+                                                <span className="text-xl">{item.icon}</span>
+                                                <h3 className="font-bold text-neutral-900">{item.title}</h3>
+                                            </div>
                                             <p className="text-sm text-neutral-600">{item.time}</p>
                                         </div>
                                     </div>
@@ -294,8 +315,9 @@ export default function AppreciationPage() {
 
                     {/* 5. Expected Benefits */}
                     <section id="benefits" className="scroll-mt-24">
-                        <h2 className="mb-6">
-                            5. Expected Benefits
+                        <h2 className="mb-6 flex items-center gap-2">
+                            <span className="text-3xl">✨</span>
+                            <span>5. Expected Benefits</span>
                         </h2>
                         <Card>
                             <div className="grid gap-4 sm:grid-cols-2">
@@ -307,6 +329,7 @@ export default function AppreciationPage() {
                                     'Boosts confidence and reinforces positive behavior.'
                                 ].map((benefit, idx) => (
                                     <div key={idx} className="flex items-start gap-3 p-3 rounded-lg bg-neutral-50">
+                                        <span className="text-lg shrink-0">✓</span>
                                         <span className="text-neutral-600">{benefit}</span>
                                     </div>
                                 ))}
@@ -316,8 +339,9 @@ export default function AppreciationPage() {
 
                     {/* 6. Proposal */}
                     <section id="management" className="scroll-mt-24">
-                        <h2 className="mb-6">
-                            6. Proposal
+                        <h2 className="mb-6 flex items-center gap-2">
+                            <span className="text-3xl">📋</span>
+                            <span>6. Proposal</span>
                         </h2>
                         <Card>
                             <ul className="flex flex-col gap-4 text-neutral-600">
@@ -336,8 +360,9 @@ export default function AppreciationPage() {
 
                     {/* 7. Conclusion */}
                     <section id="conclusion" className="scroll-mt-24">
-                        <h2 className="mb-6">
-                            7. Conclusion
+                        <h2 className="mb-6 flex items-center gap-2">
+                            <span className="text-3xl">🎯</span>
+                            <span>7. Conclusion</span>
                         </h2>
                         <Card>
                             <div className="flex flex-col gap-4">
