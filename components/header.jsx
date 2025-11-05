@@ -4,7 +4,8 @@ import netlifyLogo from 'public/netlify-logo.svg';
 import githubLogo from 'public/images/github-mark-white.svg';
 
 const navItems = [
-    { linkText: 'Appreciation', href: '/appreciation' }
+    { linkText: 'Appreciation', href: '/appreciation' },
+    { linkText: 'Ideathon', href: '/ideathon' }
 ];
 
 export function Header() {
