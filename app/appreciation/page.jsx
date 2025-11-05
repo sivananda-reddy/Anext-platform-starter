@@ -83,6 +83,7 @@ export default function AppreciationPage() {
                         <p className="text-xs text-neutral-600 mb-2">Proposed by:</p>
                         <p className="text-sm font-semibold text-neutral-900">Sivananda Reddy Bogireddy</p>
                         <p className="text-xs text-neutral-600 mt-1">Software software engineer</p>
+                        <p className="text-xs text-neutral-600 mt-1">Date: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
                     </div>
                 </div>
             </aside>
@@ -106,7 +107,8 @@ export default function AppreciationPage() {
                                 <p className="mb-2">
                                     <strong>Proposed by:</strong> Sivananda Reddy Bogireddy
                                 </p>
-                                <p className="text-neutral-600">Software software engineer</p>
+                                <p className="text-neutral-600 mb-2">Software software engineer</p>
+                                <p className="text-neutral-600 text-sm">Date: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
                             </div>
                         </div>
                     </section>
