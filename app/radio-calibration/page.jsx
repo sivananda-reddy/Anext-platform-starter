@@ -7,7 +7,6 @@ import { useState, useEffect } from 'react';
 
 const navItems = [
     { id: 'overview', label: 'Overview', icon: '📋' },
-    { id: 'problem', label: 'The Problem', icon: '🔍' },
     { id: 'breakthrough', label: 'The Breakthrough', icon: '💡' },
     { id: 'components', label: 'Key Components', icon: '🔧' },
     { id: 'impact', label: 'The Impact', icon: '⚡' },
@@ -22,9 +21,15 @@ const navItems = [
 // and update this array with the paths
 const slides = [
     // Example paths - replace with your actual slide image paths
-    // { src: '/slides/slide-1.png', alt: 'Slide 1: Introduction' },
-    // { src: '/slides/slide-2.png', alt: 'Slide 2: Problem Statement' },
-    // { src: '/slides/slide-3.png', alt: 'Slide 3: Solution Overview' },
+     { src: '/slides/slide-1.jpg', alt: 'Slide 1: Integrating Radio Calibration into AI' },
+     { src: '/slides/slide-2.jpg', alt: 'Slide 2: Current Calibration System Limitations' },
+     { src: '/slides/slide-3.jpg', alt: 'Slide 3: AI Calibration Architecture' },
+     { src: '/slides/slide-4.jpg', alt: 'Slide 4: AI Calibration Benefits' },
+     { src: '/slides/slide-5.jpg', alt: 'Slide 5: Upgrade' },
+     { src: '/slides/slide-6.jpg', alt: 'Slide 6: Enhancing Prediction Accuracy' },
+     { src: '/slides/slide-7.jpg', alt: 'Slide 7: AI/ML Calibration Optimization Process' },
+     { src: '/slides/slide-8.jpg', alt: 'Slide 8: Calibration Process Before AI Implementation' },
+     { src: '/slides/slide-9.jpg', alt: 'Slide 9: AI-Enhanced Calibration' },
 ];
 
 export default function RadioCalibrationPage() {
@@ -129,42 +134,6 @@ export default function RadioCalibrationPage() {
                                     Radio Calibration through Cutting-Edge Technology and AI Intelligence At DoodleLabs, we operate at the forefront of advanced wireless innovation, where precision calibration directly impacts the reliability and performance of our radio systems. For years, the calibration process was slow, manual, and error-prone. Today, we've revolutionized it by integrating artificial intelligence (AI) into our calibration workflows — enhancing efficiency, visibility, and accuracy, all while maintaining our existing hardware infrastructure.
                                 </p>
                             </div>
-                        </section>
-
-                        {/* The Problem: Manual Calibration Bottlenecks */}
-                        <section id="problem" className="scroll-mt-24">
-                            <h2 className="mb-6 flex items-center gap-2">
-                                <span className="text-3xl">🔍</span>
-                                <span>The Problem: Manual Calibration Bottlenecks</span>
-                            </h2>
-                            <Card>
-                                <p className="text-neutral-700 mb-6">
-                                    Traditional calibration systems are limited by their dependence on human intervention. Operators must be physically present, manually entering data, adjusting parameters, and collecting results. This introduces multiple challenges:
-                                </p>
-                                <ul className="flex flex-col gap-4 text-neutral-600">
-                                    <li className="flex items-start gap-3">
-                                        <span className="text-xl shrink-0">•</span>
-                                        <span><strong>No remote access or visibility</strong> — every calibration requires on-site presence.</span>
-                                    </li>
-                                    <li className="flex items-start gap-3">
-                                        <span className="text-xl shrink-0">•</span>
-                                        <span><strong>High error rates</strong> due to manual data entry and lack of automation.</span>
-                                    </li>
-                                    <li className="flex items-start gap-3">
-                                        <span className="text-xl shrink-0">•</span>
-                                        <span><strong>No centralized management</strong> — reports and histories are fragmented across systems.</span>
-                                    </li>
-                                    <li className="flex items-start gap-3">
-                                        <span className="text-xl shrink-0">•</span>
-                                        <span><strong>Limited scalability</strong> — calibration throughput cannot grow with production demands.</span>
-                                    </li>
-                                </ul>
-                                <div className="mt-6 pt-6 border-t border-neutral-200">
-                                    <p className="text-neutral-700 italic">
-                                        The result? A process that is time-consuming, inconsistent, and difficult to audit.
-                                    </p>
-                                </div>
-                            </Card>
                         </section>
 
                         {/* The Breakthrough: AI-Integrated Calibration System */}
